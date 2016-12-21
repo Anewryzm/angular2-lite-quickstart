@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.6.0",
+    "browser-sync": "^2.18.5",
+    "browser-sync-webpack-plugin": "^1.1.3",
     "html-webpack-plugin": "^2.24.1",
     "raw-loader": "^0.5.1",
     "ts-loader": "^1.3.3",

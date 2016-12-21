@@ -1,5 +1,6 @@
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './src/main.ts',
@@ -21,6 +22,11 @@ module.exports = {
   plugins:[
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new BrowserSyncPlugin({
+      proxy: 'localhost:8080'
+    },{
+      reload: false
     })
   ]
 };
