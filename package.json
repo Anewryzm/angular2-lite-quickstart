@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress"
+    "build": "webpack --progress",
+    "postinstall": "typings install"
   },
   "keywords": [],
   "author": "",
